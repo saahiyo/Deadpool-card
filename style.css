@@ -1,0 +1,82 @@
+/* All images are stored in local storage */
+
+ /* circle image */
+ #circle{
+       position:relative;
+       top:8%;
+       left:40%;
+       z-index: 2;
+       height: 100px;
+       width:100px;
+       border-radius:50%;
+       background-size:cover;
+       border: 2px solid red;
+       animation: float 3s ease-in-out infinite;
+       background-image: url(images/image2.jpeg)
+       }
+ /* main front card image */
+#box{
+    position:relative;
+    top:14%;
+    left:13%;
+    height:53vh;
+    width:40vh;
+    max-width: 100%;
+    border-radius: 5%;
+    overflow:hidden;
+    background-size:cover;
+    border: 2px solid red;
+    animation: float 3s ease-in-out infinite reverse;
+    background-image: url(images/image.jpeg)
+    }
+/* main front card image shadow */
+.back-white{
+    position: absolute;
+    top:225px;
+    left:13%;
+    height:400px;
+    width:300px;
+    max-width: 100%;
+    border-radius: 5%;
+    background-color:white;
+    animation: float 3s ease-in-out infinite reverse;
+ }
+ .back-white-circle{
+ position: absolute;
+ top:9%;
+ left:39%;
+ height:109px;
+ width:109px;
+ z-index: 1;
+ max-width: 100%;
+ border-radius: 50%;
+ background-color: white;
+ animation: float 3s ease-in-out infinite reverse;
+ }
+/* background image */
+ .background-image{
+ position:absolute;
+ left:25px;
+ bottom:20px;
+ top:50px;
+ height:650;
+ width:380px;
+ opacity:67%;
+ border-radius:20px;
+ background-size:cover;
+ border: 1px solid red;
+ filter:blur(2px);
+ background-image: url(images/image3.jpeg)
+ }
+ /* Define the keyframes for the animation */
+ @keyframes float {
+ 0% {
+ transform: translateY(0);
+ }
+ 50% {
+ transform: translateY(-10px);
+ }
+ 100% {
+ transform: translateY(0);
+ }
+ }
